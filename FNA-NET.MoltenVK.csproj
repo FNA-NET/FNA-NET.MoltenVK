@@ -10,6 +10,14 @@
     <IsBindingProject>true</IsBindingProject>
     <NoBindingEmbedding>true</NoBindingEmbedding>
     <SupportedOSPlatformVersion>11.0</SupportedOSPlatformVersion>
+
+    <GeneratePackageOnBuild>True</GeneratePackageOnBuild>
+    <Authors>FNA-NET</Authors>
+    <Description>MolteVK Native libs for FNA-NET.</Description>
+    <PackageTags>moltenvk;dotnet;</PackageTags>
+    <PackageId>FNA.NET.MoltenVK</PackageId>
+    <PackageLicenseFile>LICENSE.txt</PackageLicenseFile>
+    <Version>0.1.0</Version>
   </PropertyGroup>
 
   <ItemGroup>
@@ -20,6 +28,13 @@
     </NativeReference>
 
     <ObjcBindingApiDefinition Include="DummyApiDefinition.cs" />
+  </ItemGroup>
+
+  <ItemGroup>
+    <None Include="LICENSE.txt">
+      <Pack>True</Pack>
+      <PackagePath></PackagePath>
+    </None>
   </ItemGroup>
 
 </Project>

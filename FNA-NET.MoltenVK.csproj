@@ -6,29 +6,9 @@
     <AllowUnsafeBlocks>true</AllowUnsafeBlocks>
     <BaseOutputPath>Artifacts</BaseOutputPath>
     <NoWarn>$(NoWarn);CS1572;CS1570;</NoWarn>
-    <TargetFramework>net6.0-ios</TargetFramework>
-    <IsBindingProject>true</IsBindingProject>
-    <NoBindingEmbedding>true</NoBindingEmbedding>
+    <TargetFrameworks>net6.0-ios;net6.0-tvos;</TargetFrameworks>
     <SupportedOSPlatformVersion>11.0</SupportedOSPlatformVersion>
-
-    <GeneratePackageOnBuild>True</GeneratePackageOnBuild>
-    <Authors>FNA-NET</Authors>
-    <Description>MolteVK Native libs for FNA-NET.</Description>
-    <PackageTags>moltenvk;dotnet;</PackageTags>
-    <PackageId>FNA.NET.MoltenVK</PackageId>
-    <PackageLicenseFile>LICENSE.txt</PackageLicenseFile>
-    <Version>0.1.0</Version>
   </PropertyGroup>
-
-  <ItemGroup>
-    <NativeReference Include="runtime\MoltenVK.xcframework">
-      <Kind>Static</Kind>
-      <SmartLink>False</SmartLink>
-      <ForceLoad>True</ForceLoad>
-    </NativeReference>
-
-    <ObjcBindingApiDefinition Include="DummyApiDefinition.cs" />
-  </ItemGroup>
 
   <ItemGroup>
     <None Include="LICENSE.txt">

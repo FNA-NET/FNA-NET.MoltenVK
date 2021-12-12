@@ -1,0 +1,39 @@
+<?xml version="1.0"?>
+<package >
+  <metadata>
+    <id>FNA.NET.MoltenVK</id>
+    <version>0.0.0.0</version>
+    <title>FNA-NET MoltenVK</title>
+    <authors>ryancheung</authors>
+    <owners>ryancheung</owners>
+    <license type="file">LICENSE.txt</license>
+    <projectUrl>https://github.com/FNA-NET</projectUrl>
+    <requireLicenseAcceptance>false</requireLicenseAcceptance>
+    <description>.NET 6 wrapper of MoltenVK native libs for FNA-NET.</description>
+    <releaseNotes></releaseNotes>
+    <copyright>Copyright 2022 ryancheung</copyright>
+    <tags>fna xna net6 moltenvk</tags>
+
+    <dependencies>
+      <group targetFramework="net6.0-ios15.4">
+      </group>
+      <group targetFramework="net6.0-tvos15.4">
+      </group>
+    </dependencies>
+  </metadata>
+
+  <files>
+
+    <file src="..\Artifacts\Release\net6.0-ios\FNA.NET.MoltenVK.dll" target="lib/net6.0-ios15.4" />
+    <file src="..\Artifacts\Release\net6.0-ios\FNA.NET.MoltenVK.pdb" target="lib/net6.0-ios15.4" />
+    <file src="manifests\manifest_ios" target="lib/net6.0-ios15.4/FNA.NET.MoltenVK.resources/manifest" />
+
+    <file src="..\Artifacts\Release\net6.0-tvos\FNA.NET.MoltenVK.dll" target="lib/net6.0-tvos15.4" />
+    <file src="..\Artifacts\Release\net6.0-tvos\FNA.NET.MoltenVK.pdb" target="lib/net6.0-tvos15.4" />
+    <file src="manifests\manifest_tvos" target="lib/net6.0-tvos15.4/FNA.NET.MoltenVK.resources/manifest" />
+
+    <file src="..\runtime\**\*.*" target="content/res" />
+
+    <file src="..\LICENSE.txt" />
+  </files>
+</package>

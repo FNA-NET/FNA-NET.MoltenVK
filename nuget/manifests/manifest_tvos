@@ -1,7 +1,7 @@
 ﻿<BindingAssembly>
 	<NativeReference Name="../../../content/res/MoltenVK.xcframework">
 		<Kind>Static</Kind>
-		<ForceLoad>False</ForceLoad>
+		<ForceLoad>True</ForceLoad>
 		<SmartLink>False</SmartLink>
 		<Frameworks></Frameworks>
 		<WeakFrameworks></WeakFrameworks>

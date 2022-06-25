@@ -7,8 +7,22 @@
     <BaseOutputPath>Artifacts</BaseOutputPath>
     <NoWarn>$(NoWarn);CS1572;CS1570;</NoWarn>
     <TargetFrameworks>net6.0-ios;net6.0-tvos;</TargetFrameworks>
+    <IsBindingProject>true</IsBindingProject>
+    <NoBindingEmbedding>true</NoBindingEmbedding>
     <SupportedOSPlatformVersion>11.0</SupportedOSPlatformVersion>
   </PropertyGroup>
+
+  <ItemGroup>
+    <NativeReference Include="runtime\MoltenVK.xcframework">
+      <Kind>Static</Kind>
+      <SmartLink>False</SmartLink>
+      <ForceLoad>True</ForceLoad>
+      <Frameworks>Metal Foundation QuartzCore UIKit IOSurface</Frameworks>
+    </NativeReference>
+
+    <ObjcBindingApiDefinition Include="DummyApiDefinition.cs" />
+    <ObjcBindingCoreSource Include="**\*.cs" Exclude="obj\**\*.cs" />
+  </ItemGroup>
 
   <ItemGroup>
     <None Include="LICENSE.txt">
